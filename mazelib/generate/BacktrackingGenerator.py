@@ -29,7 +29,7 @@ class BacktrackingGenerator(MazeGenAlgo):
         # create empty grid, with walls
         grid = np.empty((self.H, self.W), dtype=np.int8)
         grid.fill(1)
-
+        print("grid")
         crow = randrange(1, self.H, 2)
         ccol = randrange(1, self.W, 2)
         track = [(crow, ccol)]
